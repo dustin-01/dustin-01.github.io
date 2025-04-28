@@ -1,0 +1,9 @@
+.container{
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.img{
+    flex-wrap: nowrap;
+    display: inline-block;
+}
