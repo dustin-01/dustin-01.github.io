@@ -1,0 +1,37 @@
+html {
+  font-size: 10px;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin : 0px 0px 0px 0px; 
+}
+
+.topcontainer{
+    display: flex;
+    font-size: 20px;
+}
+
+.headerinfo{
+    flex-grow: 4;
+    padding : 40px 40px 40px 40px;
+    background-color: rgb(226, 243, 238);
+    line-height: 0.5;
+}
+
+.maincontent{
+    margin : 40px 40px 40px 40px;
+    font-size: 15px;
+}
+
+.image{
+    display: flex;
+    border-radius: 100px;
+}
+
+img{
+    border-radius: 10px;
+    outline-color:rgb(141, 141, 141);
+    outline-width: 20px;
+    outline-style: auto;
+}
