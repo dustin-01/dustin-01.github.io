@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    line-height: 1.8;
+}
+
+.form_container {
+    width: 100%;
+}
+
+input, textarea, select{
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(255, 255, 255));
+    border-color: rgb(209, 209, 209);
+    border-radius: 7px;
+    border-width: 1px;
+    border-style:solid;
+    padding-left: 8px;
+    height: 30px;
+    width: 500px;
+    margin-bottom: 10px;
+    
+}
+
+input[type="number"]{
+    width: 250px;
+}
+
+input[type="radio"]{
+    width: 20px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(rgb(52, 67, 199), #4d6eb6);
+    color: aliceblue;
+
+}
+
+input:hover, select:hover{
+    transform: scale(1.01);
+    background-color: rgb(211, 211, 211);
+    /* border-color: azure; */
+    filter: drop-shadow(8px 8px 10px rgba(220, 220, 220, 0.322));
+    /* border-width: 0px; */
+  }
+
+textarea{
+    height: 70px;
+    width: 650px;
+}
