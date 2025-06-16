@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <img id="followMouse" src="sean.jpg" class="background"></div>
+    <div class="card" id="followMouseReverse">
+        <div class="card-header">
+            <img src="sean.jpg" alt="Image of Sean." width="40%" class="animated">
+            <div class="card-header-stats">
+                <h1 class="animated">
+                    Sean Genova
+                </h1>
+                <ul>
+                    <li class="animated">Age: 22</li>
+                    <li class="animated">Height: 5"6'ft (?)</li>
+                    <li class="animated">Course: BSIT AGD</li>
+                    <li class="animated">Status: Proud to be single</li>
+                    <li class="animated">Pronouns: Any (goa/ted)</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="animated">
+            His Favourite Things
+        </h2>
+        <p>
+            <ul class="animated">
+                <li>Pride Month</li>
+                <li>Men</li>
+                <li>Horror Stuff</li>
+                <li>Comics</li>
+            </ul>
+        </p>
+        <h2 class="animated">
+            Our Memories Together
+        </h2>
+        <p>
+            <ul class="animated">
+                <li>Laughing about gay people</li>
+                <li>Jollibee</li>
+                <li>Mcdonalds</li>
+                <li>Each other</li>
+                <li>Walking around campus</li>
+                <li>More to come</li>
+            </ul>
+        </p>
+        <a href="index.html">
+            <button class="animated">
+                Go Back
+            </button>
+        </a>
+    </div>
+
+    <script>
+        const image = document.getElementById('followMouse');
+
+        // Track mouse movement and update image position
+        document.addEventListener('mousemove', (event) => {
+        image.style.left = `${event.pageX/70 - image.offsetWidth /70 / 2}px`;
+        image.style.top = `${event.pageY/70 - image.offsetHeight /70 / 2}px`;
+        });
+
+        const reverse_follow = document.getElementById('followMouseReverse');
+
+        // Track mouse movement and update image position
+        document.addEventListener('mousemove', (event) => {
+        reverse_follow.style.transform = `translate(${-event.pageX/70 - reverse_follow.offsetWidth /70 / 2}px, ${-event.pageY/70 - reverse_follow.offsetHeight /70 / 2}px)`;
+        });
+    </script>
+</body>
+</html>

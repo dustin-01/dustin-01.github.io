@@ -4,10 +4,17 @@ body{
 
 .container{
     margin: auto;
-    /* align-content: center; */
-    /* align-items: center; */
+    align-content: center;
+    align-items: center;
 
     width: 90%;
+}
+
+.center {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 
 table, td, thead, th{
@@ -19,7 +26,7 @@ table, td, thead, th{
     margin: auto;
 }
 
-.btn{
+button{
     width: 200px;
     height: 40px;
     border-width: 1px;
@@ -28,9 +35,10 @@ table, td, thead, th{
     background-color: white;
     filter: drop-shadow(1px 1px 1px gainsboro);
     transition: 300ms;
+    margin: 2px;
 }
 
-.btn:hover {
+button:hover {
     transform: scale(1.05);
     background-color: rgb(211, 211, 211);
     border-color: azure;
@@ -38,7 +46,7 @@ table, td, thead, th{
     /* border-width: 0px; */
   }
 
-.btn:active{
+button:active{
     transition: 100ms;
     transform: scale(0.95);
     background-color: white;
