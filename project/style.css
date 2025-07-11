@@ -1,0 +1,16 @@
+.bg-image {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPok%25C3%25A9mon&psig=AOvVaw1x-VrE4emfzJXNsqBQQK0p&ust=1752305132733000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjp6rejtI4DFQAAAAAdAAAAABAE');
+  background-size: cover;
+  background-position: center;
+}
+
+.my-custom-navbar {
+ color: #f1c40f !important;
+  background-color: #272d4a; /* Replace with any hex/rgb/color value */
+  
+}
+
+.my-custom-navbar .navbar-brand,
+.my-custom-navbar .nav-link  {
+  color: #ccc; !important; /* bright yellow */
+}
