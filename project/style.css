@@ -4,13 +4,39 @@
   background-position: center;
 }
 
-.my-custom-navbar {
- color: #f1c40f !important;
-  background-color: #272d4a; /* Replace with any hex/rgb/color value */
-  
+.main-navbar {
+  background-color: #272d4a; 
 }
 
-.my-custom-navbar .navbar-brand,
-.my-custom-navbar .nav-link  {
-  color: #ccc; !important; /* bright yellow */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-body {
+  background-image: url('assets/Background-Tile.png');
+}
+
+.login-hero-image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: visible; /* allow image to overflow */
+}
+
+.login-hero-image {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  width: 110%;
+  height: auto;
+  size: 100%;
+  z-index: 10;
+  filter: drop-shadow(5px 15px 15px #22222233);
+}
+
+.login-hero-background {
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d82b2e;
+  border-top-left-radius: 1.9rem;
+  border-bottom-left-radius: 1.9rem;
 }
