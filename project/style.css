@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Hammersmith One';
 }
 
 .login-body {
@@ -39,4 +39,94 @@ body {
   background: #d82b2e;
   border-top-left-radius: 1.9rem;
   border-bottom-left-radius: 1.9rem;
+}
+
+.meowth {
+ margin-top: 10%;
+ margin-left: 18%;
+ margin-bottom: 50px;
+ width: auto;
+ height: auto;
+ float: left;
+ padding-right:25% ;
+}
+
+.meowth-text {
+  margin-top: 5%;
+  margin-bottom: 45px;
+  font-size: 55px;
+  font-family: 'Hammersmith One';
+  padding-right: 40px;
+
+}
+
+.about-text {
+
+  font-size: 30px;
+  font-family: 'Hammersmith One';
+  padding-right: 40px;
+}
+
+.image-container {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .image-container img {
+      width: 250px; 
+      height: 250px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .image-container p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+
+.KielP {
+  width: 250px; 
+  height: 250px; 
+  margin-left: 20px; 
+  float: left;
+  margin-right: 75px;
+}
+
+.MavP {
+  width: 300px; 
+  height: 300px; 
+  margin-left: 20px; 
+  float: left;
+  margin-right: 50px;
+}
+
+.SimpP {
+  width: 250px; 
+  height: 250px; 
+  margin-left: 20px; 
+  float: left;
+  margin-bottom: 50px;
+}
+
+.Dustin-text {
+  float: left; 
+}
+
+.KPname{
+  float: left; 
+  padding-right: 13%; 
+  padding-left: 65px;
+}
+
+.MPname{
+  float: left; 
+  padding-right: 14%; 
+  padding-left: 65px;
+}
+
+.SPname{
+  float: left; 
+  
+
 }
