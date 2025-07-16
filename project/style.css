@@ -8,6 +8,11 @@
   background-color: #272d4a; 
 }
 
+.main-footer {
+  background-color: #272d4a; 
+  color: white
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -37,6 +42,64 @@ body {
 .login-hero-background {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: #d82b2e;
-  border-top-left-radius: 1.9rem;
-  border-bottom-left-radius: 1.9rem;
+  border-top-left-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+}
+
+.pokeball-background-tiles {
+  background-color: #ffde00;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+
+}
+
+
+.grass-background {
+  background-image: url('assets/Grass-Background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.box-a, .box-b, .box-c, .box-d {
+  background-size: cover;
+  background-position: center;
+}
+
+.box-a{
+  background-image: url('assets/Blastoise-Hero.png');
+}
+
+.box-b{
+  background-image: url('assets/City-Background.png');
+}
+
+.box-c{
+  background-image: url('assets/Forest-Background.png');
+}
+
+.box-d{
+  background-image: url('assets/Ditto-Background.png');
+}
+
+.box-text{
+  filter: drop-shadow(5px 15px 15px #22222233);
+}
+
+.bento-item {
+  height: 300px;
+  border-radius: 1em;
+  display: flex;
+  font-weight: bold;
+  align-items: end;
+  color: #272d4a;
+  transition: transform 0.3s ease;
+  padding: 2em;
+  filter: drop-shadow(5px 15px 15px #22222233);
+}
+
+.bento-item:hover {
+  transform: scale(1.025);
 }
