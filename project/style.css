@@ -115,6 +115,7 @@ body {
   transform: scale(1.025);
 }
 
+<<<<<<< Updated upstream
 .meowth {
  margin-top: 10%;
  margin-left: 18%;
@@ -187,3 +188,33 @@ img {
   max-width: 100%;
   height: auto;
 }
+=======
+.discover-card {
+  background-color: #d82b2e;
+  border-radius: 2.1em;
+  padding: 1.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .discover-card {
+    border-radius: 1.5em;
+    padding: 1em;
+  }
+}
+
+.discover-card:hover {
+  transform: scale(1.025);
+}
+
+.limited-gift-card {
+  background-color: #a9a9a9;
+  background-image: linear-gradient(to bottom, #a9a9a900, #d3d3d3);
+  border-radius: 1.5em;
+  border: 0;
+  padding: 1.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+>>>>>>> Stashed changes
