@@ -39,6 +39,17 @@ body {
   filter: drop-shadow(5px 15px 15px #22222233);
 }
 
+.login-hero-signup-image {
+  position: absolute;
+  top: 150px;
+  left: -10px;
+  width: 110%;
+  height: auto;
+  size: 100%;
+  z-index: 10;
+  filter: drop-shadow(5px 15px 15px #22222233);
+}
+
 .login-hero-background {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: #d82b2e;
@@ -123,7 +134,7 @@ body {
 
 }
 
-.about-text {
+.aboutus-text {
 
   font-size: 30px;
   font-family: 'Hammersmith One';
@@ -146,3 +157,33 @@ body {
       margin-top: 8px;
       font-size: 16px;
     }
+
+ .quadrant::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/5/5a/Pok%C3%A9_Ball_icon.svg') no-repeat center center;
+  background-size: 80%;
+  opacity: 0.08;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.quadrant > * {
+  position: relative;
+  z-index: 1;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
