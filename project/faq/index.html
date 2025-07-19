@@ -9,160 +9,248 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/project/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Frequently Asked Questions</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/project/">
-        <img src="/project/assets/Logo-Outline.webp" alt="logo" />
-      </a>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand hover-rise" href="/project/">
+          <img src="/project/assets/Logo-Outline.webp" alt="logo" />
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active text-white fs-5 text-uppercase p-4"
-              href="/project/"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
-          </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
-          </li>
-        </ul>
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/products/"
+                >Store</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise active text-warning fs-5 text-uppercase p-4 text-decoration-underline"
+                href="/project/faq/"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/about/"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cartcanvas"
+                aria-controls="cartcanvas"
+                aria-expanded="false"
+              >
+                CART
+              </button>
+            </li>
+          </ul>
 
-        <div class="d-lg-none mt-3">
-          <a href="/project/login/"><button class="btn btn-danger rounded-pill w-100">Log In</button></a>
+          <div class="d-lg-none mt-3">
+            <a href="/project/login/"
+              ><button class="btn btn-danger rounded-pill w-100">
+                Log In
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
+          <button
+            class="btn btn-secondary rounded-circle me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartcanvas"
+            aria-controls="cartcanvas"
+          >
+            <i class="bi bi-cart"></i>
+          </button>
+          <a href="/project/login/"
+            ><button class="btn btn-danger rounded-pill px-5">Log In</button></a
+          >
         </div>
       </div>
-      <div class="d-none d-lg-block">
-        <a href="/project/login/"><button class="btn btn-danger rounded-pill px-5">Log In</button></a>
-    </div>
-  </nav>
+    </nav>
 
     <section class="mb-5">
       <div class="container text-center py-5">
         <h1 class="display-4">Frequently Asked Questions</h1>
-        <p class="lead">Here are some common questions and answers about our Pokémon GO Webstore.</p>
+        <p class="lead">
+          Here are some common questions and answers about our Pokémon GO
+          Webstore.
+        </p>
       </div>
 
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-4">
             <h3>What is the Pokémon GO Webstore?</h3>
-            <p>The Pokémon GO Webstore is an online platform where you can purchase various Pokémon-themed merchandise, 
-              including clothing, accessories, and collectibles.</p>
+            <p>The Pokémon GO Webstore is an online platform where you can purchase various Pokémon-themed merchandise, including clothing, accessories, and collectibles.</p>
           </div>
           <div class="col-md-6 mb-4">
             <h3>How do I place an order?</h3>
-            <p>To place an order, simply browse our store, add items to your cart, and proceed to checkout. 
-              You will need to create an account or log in to complete your purchase.</p>
+            <p>To place an order, simply browse our store, add items to your cart, and proceed to checkout. You will need to create an account or log in to complete your purchase.</p>
           </div>
           <div class="col-md-6 mb-4">
             <h3>What payment methods do you accept?</h3>
-            <p>We accept various payment methods including credit cards, PayPal, and other secure payment options.</p>
+            <p>
+              We accept various payment methods including credit cards, PayPal,
+              and other secure payment options.
+            </p>
           </div>
           <div class="col-md-6 mb-4">
             <h3>Can I return items?</h3>
-            <p>Yes, we have a return policy that allows you to return items within a specified period 
-              if they are in their original condition. Please refer to our return policy for more details.</p>
+            <p>Yes, we have a return policy that allows you to return items within a specified period if they are in their original condition. Please refer to our return policy for more details.</p>
           </div>
         </div>
             <div class="accordion" id="FAQAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                How to update Pokémon GO child permissions on your child’s Pokémon Trainer Club account
+              <button
+                class="accordion-button collapsed py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How to update Pokémon GO child permissions on your child’s
+                Pokémon Trainer Club account
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#FAQAccordion">
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQAccordion"
+            >
               <div class="accordion-body">
-                Log in to your parent Pokémon Trainer Club account, go to the child's profile,
-                and update the permissions under "Play! Settings" or "Niantic Settings".
+                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button
+                class="accordion-button collapsed py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
                 About Pokémon GO
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FAQAccordion">
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQAccordion"
+            >
               <div class="accordion-body">
-                Pokémon GO is an augmented reality mobile game that lets players find, catch, 
-                and battle Pokémon in the real world using GPS and their smartphone.
+                <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button
+                class="accordion-button collapsed py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
                 Support for Pokémon GO
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#FAQAccordion">
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQAccordion"
+            >
               <div class="accordion-body">
-                You can visit the Niantic Support Center online or access in-game support from the menu
-                 by tapping Settings > Help.
+                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                 Can I link my Pokémon Trainer Club account to Niantic Kids or Google accounts or transfer progress between different types of accounts?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#FAQAccordion">
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQAccordion"
+            >
               <div class="accordion-body">
-                Yes, you can link multiple login providers to one Pokémon GO account in the Settings menu, 
-                but progress cannot be transferred between different accounts.
+                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                 “Unable to authenticate” or “Failed to log in” error when logging in to Pokémon GO
               </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#FAQAccordion">
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQAccordion"
+            >
               <div class="accordion-body">
-                These errors usually occur due to server issues, incorrect login credentials, 
-                or a weak internet connection; try restarting the app or checking your credentials.
+                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                 Why isn’t Adventure Sync in Pokémon GO tracking my progress?
               </button>
             </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#FAQAccordion">
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#FAQAccordion"
+            >
               <div class="accordion-body">
-                Adventure Sync may not track your steps if permission is not granted, 
-                battery optimization is on, or if the health app integration is disabled.
+                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -174,15 +262,23 @@
         <div class="row gy-4 align-items-center">
           <div class="col-12 col-md-2">
             <a href="#">
-              <img src="/project/assets/Logo-Outline.webp" alt="logo" class="img-fluid" />
+              <img
+                src="/project/assets/Logo-Outline.webp"
+                alt="logo"
+                class="img-fluid"
+              />
             </a>
           </div>
 
           <div class="col-12 col-md-3">
-            <a href="#" class="link-light text-decoration-none">Terms of Service</a>
+            <a href="#" class="link-light text-decoration-none"
+              >Terms of Service</a
+            >
           </div>
           <div class="col-12 col-md-3">
-            <a href="#" class="link-light text-decoration-none">Privacy Policy</a>
+            <a href="#" class="link-light text-decoration-none"
+              >Privacy Policy</a
+            >
           </div>
           <div class="col-12 col-md-4">
             <a href="#" class="link-light text-decoration-none">Contact Us</a>
@@ -192,16 +288,22 @@
         <hr class="my-4 border-light" />
 
         <div class="text-center small">
-          <p class="mb-1">© 2025 Pokémon Company International. All rights reserved.</p>
-          <p class="mb-1">Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.</p>
+          <p class="mb-1">
+            © 2025 Pokémon Company International. All rights reserved.
+          </p>
+          <p class="mb-1">
+            Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.
+          </p>
         </div>
       </div>
     </footer>
-  
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="/project/shopData.js"></script>
+    <script src="/project/script.js"></script>
   </body>
 </html>

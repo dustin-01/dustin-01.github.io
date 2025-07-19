@@ -20,7 +20,7 @@
     <!-- header -->
     <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/project/">
+        <a class="navbar-brand hover-rise" href="/project/">
           <img src="/project/assets/Logo-Outline.webp" alt="logo" />
         </a>
 
@@ -39,35 +39,35 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link active text-white fs-5 text-uppercase p-4"
+                class="nav-link hover-rise active text-warning fs-5 text-uppercase p-4 text-decoration-underline"
                 href="/project/"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-white fs-5 text-uppercase p-4"
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
                 href="/project/products/"
                 >Store</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-white fs-5 text-uppercase p-4"
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
                 href="/project/faq/"
                 >FAQ</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-white fs-5 text-uppercase p-4"
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
                 href="/project/about/"
                 >ABOUT US</a
               >
             </li>
             <li class="nav-item">
               <button
-                class="nav-link text-white fs-5 text-uppercase p-4"
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#cartcanvas"
@@ -109,10 +109,11 @@
         <h1 class="display-4">Welcome to the Pokémon GO Webstore</h1>
         <p class="lead">Explore the world of Pokémon with us!</p>
         <a href="login/" class="btn btn-primary btn-lg">Get Started</a>
-        <div class="embed-responsive embed-responsive-16by9 m-5">
+        <div class="ratio ratio-16x9 my-5">
           <iframe
-            class="embed-responsive-item w-100"
-            src="https://www.youtube.com/watch?v=KnIuPwp9kKk"
+            class="w-100 h-100"
+            src="https://www.youtube.com/embed/KnIuPwp9kKk"
+            title="YouTube video"
             allowfullscreen
           ></iframe>
         </div>
@@ -129,7 +130,7 @@
             <div class="box-a bento-item h-100">
               <div class="overlay">
                 <p class="box-text">May 2</p>
-                <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+                <h5>Blastoise spotted in<br />FEU Tech!</h5>
               </div>
             </div>
           </div>
@@ -142,7 +143,7 @@
                 <div class="box-b bento-item">
                   <div class="overlay">
                     <p>May 2</p>
-                    <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+                    <h5>Ready for Mega Boss Raid?!<br />Manila, Philippines</h5>
                   </div>
                 </div>
               </div>
@@ -153,16 +154,16 @@
                   <div class="col-md-6">
                     <div class="box-c bento-item">
                       <div class="overlay">
-                        <p>May 2</p>
-                        <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+                        <p>June 25</p>
+                        <h5>Are you ready to pass<br />Tamaraws?</h5>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="box-d bento-item">
                       <div class="overlay">
-                        <p>May 2</p>
-                        <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+                        <p>Aug 18</p>
+                        <h5>Special Ditto Day<br />Marawi, Mindanao</h5>
                       </div>
                     </div>
                   </div>
@@ -237,6 +238,7 @@
       </div>
     </footer>
 
+    <!-- cart side thing -->
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
@@ -337,7 +339,7 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script src="shopData.js"></script>
-    <script src="script.js"></script>
+    <script src="/project/shopData.js"></script>
+    <script src="/project/script.js"></script>
   </body>
 </html>
