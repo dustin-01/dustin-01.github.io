@@ -74,7 +74,9 @@ function createCartItemBlock(productId, quantity) {
 function updateCartUI() {
     const container = document.getElementById("cart-items");
     container.innerHTML = ""; // Clear existing items
-     
+    
+    let total_cost = 0.0;
+
     if (Object.keys(cart).length === 0) {
         container.innerHTML = `<div class="text-center text-muted">Your cart is empty.</div>`;
         return;
@@ -83,8 +85,12 @@ function updateCartUI() {
             console.log(productId, quantity);
             const itemElement = createCartItemBlock(productId, quantity);
             container.appendChild(itemElement);
+            total_cost += shopItems[productId].price * quantity
         }
     }
+
+    const summary_container = document.getElementById("cart-total");
+    summary_container.innerText = "₱" + total_cost.toFixed(2).toLocaleString()
 }
 
 function onCartChange() {

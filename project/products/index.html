@@ -156,6 +156,7 @@
 
   <section class="login-body">
     <div class="container py-5">
+<<<<<<< Updated upstream
       <h1 class="text-left m-4 display-6 fw-bold">Trainer Boosts</h1>
         <div class="row g-5 align-content-center">
             <div class="product-slot" data-product-id="incense"></div>
@@ -186,6 +187,33 @@
             <div class="product-slot" data-product-id="remoteRaidPass"></div>
             <div class="product-slot" data-product-id="premiumBattlePass"></div>
         </div>   
+=======
+      <h1 class="text-left m-4 display-6 fw-bold">Ticket Bundles</h1>
+      <div class="row g-5 align-content-center">
+        <div class="product-slot" data-product-id="incense"></div>
+        <div class="product-slot" data-product-id="starPiece"></div>
+        <div class="product-slot" data-product-id="lucky_egg"></div>
+        <div class="product-slot" data-product-id="itemBag"></div>
+        <div class="product-slot" data-product-id="pokemonStorage"></div>
+        <div class="product-slot" data-product-id="maxParticlePack"></div>
+        <div class="product-slot" data-product-id="maxMushroom"></div>
+      </div>
+      <h1 class="text-left m-4 mt-5 display-6 fw-bold">Other Items</h1>
+      <div class="row g-5 align-content-center">
+        <div class="product-slot" data-product-id="eggIncubator"></div>
+        <div class="product-slot" data-product-id="superIncubator"></div>
+        <div class="product-slot" data-product-id="maxRevive"></div>
+        <div class="product-slot" data-product-id="rareCandy"></div>
+      </div>
+      <h1 class="text-left m-4 mt-5 display-6 fw-bold">Lures</h1>
+      <div class="row g-5 align-content-center">
+        <div class="product-slot" data-product-id="lureModule"></div>
+        <div class="product-slot" data-product-id="glacialLureModule"></div>
+        <div class="product-slot" data-product-id="mossyLureModule"></div>
+        <div class="product-slot" data-product-id="magneticLureModule"></div>
+        <div class="product-slot" data-product-id="rainyLureModule"></div>
+      </div>
+>>>>>>> Stashed changes
     </div>
   </section>
 
@@ -302,15 +330,21 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Checkout button pinned at bottom -->
         <div class="mt-4">
-          <button
+          <!-- Summary -->
+          <div class="d-flex justify-content-between align-items-center border-top py-4">
+            <div class="fw-semibold fs-5">Summary</div>
+            <div id="cart-total" class="fw-bold fs-5">₱0.00</div>
+          </div>
+
+          <a
+            href="/project/payment"
             class="btn btn-danger rounded-pill px-5 w-100 p-3"
-            data-bs-dismiss="offcanvas"
           >
             PROCEED TO CHECKOUT
-          </button>
+          </a>
         </div>
       </div>
     </div>
