@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-     <title>Document</title>
-</head>
-<body>
-   <!-- header -->
-  <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/project/">
-        <img src="/project/assets/Logo-Outline.webp" alt="logo" />
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Pokémon Go!</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/project/">
+          <img src="/project/assets/Logo-Outline.webp" alt="logo" />
+        </a>
 
-<<<<<<< Updated upstream
         <button
           class="navbar-toggler"
           type="button"
@@ -27,7 +35,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
@@ -37,173 +45,299 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-5 text-uppercase p-4" href="#">Event</a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link text-white fs-5 text-uppercase p-4" href="#">Store</a>
+              <a
+                class="nav-link text-white fs-5 text-uppercase p-4"
+                href="/project/products/"
+                >Store</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-5 text-uppercase p-4" href="#">FAQ</a>
+              <a
+                class="nav-link text-white fs-5 text-uppercase p-4"
+                href="/project/faq/"
+                >FAQ</a
+              >
             </li>
-             <li class="nav-item">
-              <a class="nav-link text-white fs-5 text-uppercase p-4" href="about.html">ABOUT US</a>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fs-5 text-uppercase p-4"
+                href="/project/about/"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link text-white fs-5 text-uppercase p-4"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cartcanvas"
+                aria-controls="cartcanvas"
+                aria-expanded="false"
+              >
+                CART
+              </button>
             </li>
           </ul>
-=======
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active text-white fs-5 text-uppercase p-4"
-              href="/project/"
-              >Home</a
+
+          <div class="d-lg-none mt-3">
+            <a href="/project/login/"
+              ><button class="btn btn-danger rounded-pill w-100">
+                Log In
+              </button></a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="#">About Us</a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
-          </li>
-        </ul>
->>>>>>> Stashed changes
-
-        <div class="d-lg-none mt-3">
-          <a href="/project/login/"><button class="btn btn-danger rounded-pill w-100">Log In</button></a>
-        </div>
-      </div>
-      <div class="d-none d-lg-block">
-        <a href="/project/login/"><button class="btn btn-danger rounded-pill px-5">Log In</button></a>
-    </div>
-  </nav>
-   
-  <section>
-    <div class="container text-center my-5">
-      <h1 class="display-4">Welcome to the Pokémon GO Webstore</h1>
-      <p class="lead">Explore the world of Pokémon with us!</p>
-      <a href="login/" class="btn btn-primary btn-lg">Get Started</a>
-      <div class="embed-responsive embed-responsive-16by9 m-5">
-        <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/watch?v=KnIuPwp9kKk" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section class="grass-background p-5 d-flex align-items-center justify-content-center">
-    <div class="container my-5">
-      <div class="row g-4">
-        <!-- LEFT COLUMN -->
-        <div class="col-md-5">
-          <div class="box-a bento-item h-100">
-            <div class="overlay">
-              <p class="box-text">May 2</p>
-              <h5>Blastoise spotted in<br>Marawi, Mindanao</h5>
-            </div>
           </div>
         </div>
+        <div class="d-none d-lg-block">
+          <button
+            class="btn btn-secondary rounded-circle me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartcanvas"
+            aria-controls="cartcanvas"
+          >
+            <i class="bi bi-cart"></i>
+          </button>
+          <a href="/project/login/"
+            ><button class="btn btn-danger rounded-pill px-5">Log In</button></a
+          >
+        </div>
+      </div>
+    </nav>
 
-        <!-- RIGHT COLUMN -->
-        <div class="col-md-7">
-          <div class="row g-4">
-            <!-- Top box (Box B) -->
-            <div class="col-md-12">
+    <section>
+      <div class="container text-center my-5">
+        <h1 class="display-4">Welcome to the Pokémon GO Webstore</h1>
+        <p class="lead">Explore the world of Pokémon with us!</p>
+        <a href="login/" class="btn btn-primary btn-lg">Get Started</a>
+        <div class="embed-responsive embed-responsive-16by9 m-5">
+          <iframe
+            class="embed-responsive-item w-100"
+            src="https://www.youtube.com/watch?v=KnIuPwp9kKk"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="grass-background p-5 d-flex align-items-center justify-content-center"
+    >
+      <div class="container my-5">
+        <div class="row g-4">
+          <!-- LEFT COLUMN -->
+          <div class="col-md-5">
+            <div class="box-a bento-item h-100">
+              <div class="overlay">
+                <p class="box-text">May 2</p>
+                <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="col-md-7">
+            <div class="row g-4">
+              <!-- Top box (Box B) -->
+              <div class="col-md-12">
                 <div class="box-b bento-item">
                   <div class="overlay">
                     <p>May 2</p>
-                    <h5>Blastoise spotted in<br>Marawi, Mindanao</h5>
+                    <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
                   </div>
-                  
                 </div>
-            </div>
-            
+              </div>
 
-            <!-- Bottom row with 2 boxes -->
-            <div class="col-md-12">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="box-c bento-item">
-                    <div class="overlay">
-                      <p>May 2</p>
-                      <h5>Blastoise spotted in<br>Marawi, Mindanao</h5>
+              <!-- Bottom row with 2 boxes -->
+              <div class="col-md-12">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="box-c bento-item">
+                      <div class="overlay">
+                        <p>May 2</p>
+                        <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="box-d bento-item">
-                    <div class="overlay">
-                      <p>May 2</p>
-                      <h5>Blastoise spotted in<br>Marawi, Mindanao</h5>
+                  <div class="col-md-6">
+                    <div class="box-d bento-item">
+                      <div class="overlay">
+                        <p>May 2</p>
+                        <h5>Blastoise spotted in<br />Marawi, Mindanao</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
-      
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="pokeball-background-tiles h-100 align-items-center justify-content-center"
+    >
+      <div class="text-center py-5">
+        <div class="container">
+          <h1 class="mb-5 fw-light">
+            <span class="fw-bold">More Pokémon</span> originally discovered in
+            the <span class="fw-bold">Paldea</span> <br />
+            region have been spotted in <span class="fw-bold">Pokémon GO!</span>
+          </h1>
+        </div>
+
+        <div class="card mb-3 mx-auto" style="max-width: 1000px">
+          <img
+            src="assets/Adventure-Abound-Thumbnail.png"
+            alt="Adventure Abound Thumbnail"
+            class="card-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container text-center py-5">
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-md-2">
+            <a href="#">
+              <img
+                src="/project/assets/Logo-Outline.webp"
+                alt="logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <a href="#" class="link-light text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+          <div class="col-12 col-md-3">
+            <a href="#" class="link-light text-decoration-none"
+              >Privacy Policy</a
+            >
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" class="link-light text-decoration-none">Contact Us</a>
+          </div>
+        </div>
+
+        <hr class="my-4 border-light" />
+
+        <div class="text-center small">
+          <p class="mb-1">
+            © 2025 Pokémon Company International. All rights reserved.
+          </p>
+          <p class="mb-1">
+            Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartcanvas"
+      aria-labelledby="offcanvasRightLabel"
+      style="width: 100%; max-width: 700px"
+    >
+      <div class="offcanvas-header p-5">
+        <h5 id="offcanvasRightLabel">CART</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <hr class="m-0" />
+      <div class="offcanvas-body p-4 d-flex flex-column">
+        <!-- Cart items will be dynamically added here -->
+        <div class="flex-grow-1 overflow-auto" id="cart-items">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+
+            <div class="">
+              <div style="width: 110px">
+                <div class="input-group">
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    −
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm text-center"
+                    value="1"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout button pinned at bottom -->
+        <div class="mt-4">
+          <button
+            class="btn btn-primary rounded-pill px-5 w-100"
+            data-bs-dismiss="offcanvas"
+          >
+            CHECKOUT
+          </button>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="pokeball-background-tiles h-100 align-items-center justify-content-center">
-    <div class="text-center py-5">
-      <div class="container">
-        <h1 class="mb-5 fw-light"><span class="fw-bold">More Pokémon</span> originally discovered in the <span class="fw-bold">Paldea</span> <br> region have been spotted in <span class="fw-bold">Pokémon GO!</span></h1>
-      </div>
-      
-      <div class="card mb-3 mx-auto" style="max-width: 1000px;">
-        <img src="assets/Adventure-Abound-Thumbnail.png" alt="Adventure Abound Thumbnail" class="card-img"/>
-      </div> 
-    </div> 
-  </section>
-
-  <footer class="main-footer">
-    <div class="container text-center py-5">
-      <div class="row gy-4 align-items-center">
-        <div class="col-12 col-md-2">
-          <a href="#">
-            <img src="/project/assets/Logo-Outline.webp" alt="logo" class="img-fluid" />
-          </a>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <a href="#" class="link-light text-decoration-none">Terms of Service</a>
-        </div>
-        <div class="col-12 col-md-3">
-          <a href="#" class="link-light text-decoration-none">Privacy Policy</a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="#" class="link-light text-decoration-none">Contact Us</a>
-        </div>
-      </div>
-
-      <hr class="my-4 border-light" />
-
-      <div class="text-center small">
-        <p class="mb-1">© 2025 Pokémon Company International. All rights reserved.</p>
-        <p class="mb-1">Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-</body>
+    <script src="shopData.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
