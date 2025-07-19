@@ -325,3 +325,265 @@ position: absolute;
   width: 100%;
   transition: background-color 0.2s;
 }
+
+/* For Payment Page naman hehe - Mav */
+
+/* PAGE LAYOUT */
+section.container-fluid {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LEFT COLUMN */
+.left-column,
+.payment-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CARDS - User Info & Payment */
+.user-info-box,
+.payment-selection-box,
+.payment-details {
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(157, 162, 167, 0.514);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+.user-info-box p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.text-pokecoin-gold {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.payment-selection-box .form-label {
+  font-weight: bold;
+  color: rgba(129, 135, 141, 0.788);
+}
+
+.payment-selection-box .payment-form {
+  border-radius: 5px;
+  background-color: rgba(157, 162, 167, 0.514);
+  border: 1px solid #9094997e;
+  padding: 10px;
+}
+
+/* PAYMENT METHODS */
+.payment-methods-accepted {
+  background-color: rgba(157, 162, 167, 0.514);
+  border: 1px solid #e2e6ea;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.payment-methods-accepted h6 {
+  color: #0c0c0c;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.payment-icons img.payment-icon {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin: 2px;
+}
+
+.continue-payment-btn {
+  font-size: 1.25rem;
+  margin-top: auto;
+}
+
+/* RIGHT COLUMN */
+.right-column {
+  background-color: rgba(221, 31, 31, 0.671);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.items-heading {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.item-summary {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.item-image-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-thumb {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item-name,
+.item-price,
+.item-quantity,
+.item-payment {
+  color: #ffffff;
+}
+
+.item-name {
+  font-size: 1rem;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+}
+
+.item-quantity {
+  font-size: 0.8rem;
+}
+
+/* TOTALS */
+.totals-section {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 991.98px) {
+  .checkout-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-column {
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 30px;
+  }
+
+  .right-column {
+    padding-top: 30px;
+  }
+}
+
+/* for Gcash/Gpay Payment */
+.label {
+  display: block;
+  color: #1f2937;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.td-no-padding {
+  padding: 0;
+}
+
+.td-button {
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9ca3af; 
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.country-code {
+  width: 4rem;
+  padding: 0.75rem;
+  color: #374151; 
+  background-color: #f3f4f6; 
+  border-right: 1px solid #9ca3af;
+  outline: none;
+}
+
+.mobile-number {
+  flex-grow: 1;
+  padding: 0.75rem;
+  color: #374151;
+  outline: none;
+}
+
+.send-code-btn {
+  background-color: #4b5563; 
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+}
+
+.send-code-btn:hover {
+  background-color: #374151;
+}
+
+.note {
+  color: #4b5563; 
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.otp-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.otp-input {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #9ca3af;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.otp-input:focus {
+  box-shadow: 0 0 0 3px #37383a; 
+}
+
+.pay-now-btn,
+.continue-payment-btn {
+  background-color: #990e0e;
+}
+
+
