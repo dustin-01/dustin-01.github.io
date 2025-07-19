@@ -77,36 +77,51 @@
       </div>
 
       <div class="row">
-        <!-- Payment Selection -->
-      <div class="col-lg-6 payment-selection-box card p-4 mb-4 shadow-sm">
-        <h5 class="card-title text-dark fw-bold mb-3">PAYMENT</h5>
-        <label for="paymentMethod" class="form-label text-dark mb-2">Please select a payment method</label>
-        <select class="payment-form mb-4" id="paymentMethod">
-          <option selected>Gcash</option>
-          <option>Visa</option>
-          <option>MasterCard</option>
-          <option>Google Pay</option>
-          <option>PayPal</option>
-        </select>
-      </div>
+        <!-- Mobile Number for OTP -->
+      <div class="col payment-details p-4 d-flex flex-column">
+        <div class="section">
+            <h6 class="text-dark fw-bold mb-3">Enter Mobile Number</h6>
+      <table class="full-width">
+        <tr>
+          <td class="td-no-padding">
+            <div class="input-group">
+              <input
+                type="text"
+                value="+63"
+                class="country-code"
+                readonly/>
 
-      <!-- Payment Methods Accepted -->
-      <div class="col-lg-6 payment-methods-accepted card p-4 mb-4">
-        <h6 class="text-dark mb-3">PAYMENT METHODS</h6>
-        <p class="text-dark mb-3">We accept the following secure payment methods:</p>
-        <div class="payment-icons d-flex flex-wrap justify-content-around align-items-center">
-          <img src="/project/assets/gcash.png" alt="Gcash" class="payment-icon" />
-          <img src="/project/assets/visa.png" alt="Visa" class="payment-icon" />
-          <img src="/project/assets/mastercard.png" alt="Mastercard" class="payment-icon" />
-          <img src="/project/assets/google-pay.png" alt="Google Pay" class="payment-icon" />
-          <img src="/project/assets/paypal.png" alt="PayPal" class="payment-icon" />
-        </div>
+              <input
+                type="tel"
+                id="mobile-number"
+                placeholder="ex. 9123456789"
+                class="mobile-number"/>
+            </div>
+          </td>
+          <td class="td-button">
+            <button class="send-code-btn">Send Code</button>
+          </td>
+        </tr>
+      </table>
+      <p class="note">You'll receive a code on this number. Make sure it's correct.</p>
+    </div>
+
+      <div>
+      <label for="otp-input-1" class="label">Enter OTP</label>
+      <div class="otp-container">
+        <input type="text" id="otp-input-1" maxlength="1" placeholder="•" class="otp-input" />
+        <input type="text" id="otp-input-2" maxlength="1" placeholder="•" class="otp-input" />
+        <input type="text" id="otp-input-3" maxlength="1" placeholder="•" class="otp-input" />
+        <input type="text" id="otp-input-4" maxlength="1" placeholder="•" class="otp-input" />
+        <input type="text" id="otp-input-5" maxlength="1" placeholder="•" class="otp-input" />
+        <input type="text" id="otp-input-6" maxlength="1" placeholder="•" class="otp-input" />
       </div>
       </div>
-      
+      </div>
+  </div>
 
       <!-- Continue Button -->
-      <button class="btn btn-danger btn-lg w-100 py-3 rounded-pill fw-bold continue-payment-btn mt-auto">Continue Payment</button>
+      <button class="btn btn-danger btn-lg w-100 py-3 rounded-pill fw-bold pay-now-btn mt-auto">Pay Now</button>
     </div>
 
     <!-- RIGHT COLUMN PART -->
@@ -114,6 +129,7 @@
       <h4 class="items-heading">ITEMS</h4>
 
       <div class="item-summary flex-grow-1 overflow-auto">
+       
         <div class="item-row d-flex align-items-center p-3 mb-3">
           <div class="item-image-container me-3">
             <img src="/project/assets/premium-raid-pass.png" alt="Premium Raid Pass" class="item-thumb" />
@@ -125,6 +141,7 @@
           <div class="item-price">₱00.00</div>
         </div>
 
+    
         <div class="item-row d-flex align-items-center p-3 mb-3">
           <div class="item-image-container me-3">
             <img src="/project/assets/premium-raid-pass.png" alt="Premium Raid Pass" class="item-thumb" />
@@ -135,6 +152,7 @@
           </div>
           <div class="item-price">₱00.00</div>
         </div>
+
 
         <div class="item-row d-flex align-items-center p-3 mb-3">
           <div class="item-image-container me-3">
