@@ -220,3 +220,87 @@ img {
 .cart-image {
   width: 80px; aspect-ratio: 1; flex-shrink: 0
 }
+
+/* Additions ni Mav para sa item (individual page) */
+.product-image {
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.background-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.item-placeholder{
+position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    max-width: 60%; 
+    height: auto; 
+    z-index: 1; 
+}
+
+.product-details{
+  margin-top: 0%;
+}
+
+.product-box{
+  background-color: white;
+  padding: 30px;
+  margin-top: 0px;
+  width: 500px;
+  height: 600px;
+}
+
+  .product-box p{
+    font-family: 'Hammersmith One';
+  }
+
+  .product-box h2{
+    font-family: 'Hammersmith One';
+  }
+
+.item-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.item-subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.item-price {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.item-description {
+  border-top: 1px solid #b7bbbb;
+  padding-top: 20px;
+  margin-top: 1rem;
+  font-size: small;
+  font-weight: 400;
+}
+
+.add-to-cart-btn {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232842;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
