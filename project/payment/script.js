@@ -7,7 +7,7 @@ function createCartItemBlock(productId, quantity) {
   console.log(quantity.quantity);
   itemBlock.innerHTML = `
     <div class="item-image-container me-3">
-    <img src="" alt="${shopItems[productId].name || 'Product Name'}" class="item-thumb" />
+    <img src="${shopItems[productId].image}" alt="${shopItems[productId].name || 'Product Name'}" class="item-thumb bg-danger" />
     </div>
     <div class="item-details flex-grow-1">
         <p class="item-name">${shopItems[productId].name || 'Product Name'}</p>
