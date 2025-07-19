@@ -10,113 +10,148 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/project/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Document</title>
   </head>
   <body class="login-body d-flex flex-column min-vh-100">
     <!-- header -->
-  <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/project/">
-        <img src="/project/assets/Logo-Outline.webp" alt="logo" />
-      </a>
+    <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand hover-rise" href="/project/">
+          <img src="/project/assets/Logo-Outline.webp" alt="logo" />
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active text-white fs-5 text-uppercase p-4"
-              href="/project/"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
-          </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
-          </li>
-        </ul>
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/products/"
+                >Store</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/faq/"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/about/"
+                >ABOUT US</a
+              >
+            </li>
+          </ul>
 
-        <div class="d-lg-none mt-3">
-          <a href="/project/login/"><button class="btn btn-danger rounded-pill w-100">Log In</button></a>
+          <div class="d-lg-none mt-3">
+            <a href="/project/login/"
+              ><button class="btn btn-danger rounded-pill w-100">
+                Log In
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="/project/login/"
+            ><button class="btn btn-danger rounded-pill px-5">Log In</button></a
+          >
         </div>
       </div>
-      <div class="d-none d-lg-block">
-        <a href="/project/login/"><button class="btn btn-danger rounded-pill px-5">Log In</button></a>
-    </div>
-  </nav>
+    </nav>
 
     <!-- login part of the code -->
-    <section class="flex-grow-1 d-flex flex-column h-100 justify-content-center">
+    <section
+      class="flex-grow-1 d-flex flex-column h-100 justify-content-center"
+    >
       <div class="container py-5">
         <div class="row flex-grow-0 justify-content-center align-items-center">
           <div class="col-12 col-md-8 col-lg-8 col-xl-9">
             <div class="card bg-light text-dark rounded-5 shadow">
-                <div class="row g-0">
-                    <div class="col-lg-5 d-grid align-items-center text-center p-1 d-none d-xl-block login-hero-background">
-                        <div class="login-hero-image-wrapper">
-                            <img src="/project/assets/Login-Hero.png" alt="Image of Hero Character" class="login-hero-image" />
-                        </div>
-                        
-                    </div>
-                    <div class="col-xl-7">
-                        <div class="card-body p-4 py-4 p-lg-5 text-center">
-                            <div class="mb-md-5 mt-md-4 pb-5">
-                                <h2 class="fw-bold mb-5">Welcome!</h2>
-                                <!-- <p class="text-white-50 mb-5">Welcome!</p> -->
-
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control rounded-pill" id="floatingEmail" placeholder="name@example.com">
-                                        <label for="floatingEmail">Email address</label>
-                                    </div>
-
-                                    <div class="form-floating mb-3">
-                                        <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="password">
-                                        <label for="floatingPassword"
-                                        >Password</label
-                                        >
-                                    </div>
-
-
-                                <p class="small mb-5 pb-lg-2">
-                                    <a class="text-black-50" href="#!">Forgot password?</a>
-                                </p>
-
-                                <button
-                                    data-mdb-button-init
-                                    data-mdb-ripple-init
-                                    class="btn btn-outline-dark btn-lg rounded-pill p-3 col-12"
-                                    type="submit"
-                                >
-                                    Login
-                                </button>
-
-                            
-                            </div>
-
-                            <div>
-                            <p class="mb-0">
-                                Don't have an account?
-                                <a href="/project/signup/" class="fw-bold">Sign Up</a>
-                            </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="row g-0">
+                <div
+                  class="col-lg-5 d-grid align-items-center text-center p-1 d-none d-xl-block login-hero-background"
+                >
+                  <div class="login-hero-image-wrapper">
+                    <img
+                      src="/project/assets/Login-Hero.png"
+                      alt="Image of Hero Character"
+                      class="login-hero-image"
+                    />
+                  </div>
                 </div>
+                <div class="col-xl-7">
+                  <div class="card-body p-4 py-4 p-lg-5 text-center">
+                    <div class="mb-md-5 mt-md-4 pb-5">
+                      <h2 class="fw-bold mb-5">Welcome!</h2>
+                      <!-- <p class="text-white-50 mb-5">Welcome!</p> -->
+
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control rounded-pill"
+                          id="floatingEmail"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingEmail">Email address</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input
+                          type="password"
+                          class="form-control rounded-pill"
+                          id="floatingPassword"
+                          placeholder="password"
+                        />
+                        <label for="floatingPassword">Password</label>
+                      </div>
+
+                      <p class="small mb-5 pb-lg-2">
+                        <a class="text-black-50" href="#!">Forgot password?</a>
+                      </p>
+
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-outline-dark btn-lg rounded-pill p-3 col-12"
+                        type="submit"
+                      >
+                        Login
+                      </button>
+                    </div>
+
+                    <div>
+                      <p class="mb-0">
+                        Don't have an account?
+                        <a href="/project/signup/" class="fw-bold">Sign Up</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -128,15 +163,23 @@
         <div class="row gy-4 align-items-center">
           <div class="col-12 col-md-2">
             <a href="#">
-              <img src="/project/assets/Logo-Outline.webp" alt="logo" class="img-fluid" />
+              <img
+                src="/project/assets/Logo-Outline.webp"
+                alt="logo"
+                class="img-fluid"
+              />
             </a>
           </div>
 
           <div class="col-12 col-md-3">
-            <a href="#" class="link-light text-decoration-none">Terms of Service</a>
+            <a href="#" class="link-light text-decoration-none"
+              >Terms of Service</a
+            >
           </div>
           <div class="col-12 col-md-3">
-            <a href="#" class="link-light text-decoration-none">Privacy Policy</a>
+            <a href="#" class="link-light text-decoration-none"
+              >Privacy Policy</a
+            >
           </div>
           <div class="col-12 col-md-4">
             <a href="#" class="link-light text-decoration-none">Contact Us</a>
@@ -146,16 +189,118 @@
         <hr class="my-4 border-light" />
 
         <div class="text-center small">
-          <p class="mb-1">© 2025 Pokémon Company International. All rights reserved.</p>
-          <p class="mb-1">Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.</p>
+          <p class="mb-1">
+            © 2025 Pokémon Company International. All rights reserved.
+          </p>
+          <p class="mb-1">
+            Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.
+          </p>
         </div>
       </div>
     </footer>
 
+    <!-- cart side thing -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartcanvas"
+      aria-labelledby="offcanvasRightLabel"
+      style="width: 100%; max-width: 700px"
+    >
+      <div class="offcanvas-header p-5">
+        <h5 id="offcanvasRightLabel">CART</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <hr class="m-0" />
+      <div class="offcanvas-body p-4 d-flex flex-column">
+        <!-- Cart items will be dynamically added here -->
+        <div class="flex-grow-1 overflow-auto" id="cart-items">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+
+            <div class="">
+              <div style="width: 110px">
+                <div class="input-group">
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    −
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm text-center"
+                    value="1"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout button pinned at bottom -->
+        <div class="mt-4">
+          <button
+            class="btn btn-primary rounded-pill px-5 w-100"
+            data-bs-dismiss="offcanvas"
+          >
+            CHECKOUT
+          </button>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="/project/shopData.js"></script>
+    <script src="/project/script.js"></script>
   </body>
 </html>

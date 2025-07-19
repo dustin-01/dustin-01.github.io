@@ -221,6 +221,27 @@ img {
   width: 80px; aspect-ratio: 1; flex-shrink: 0
 }
 
+.hover-rise {
+  transition: transform 0.2s ease;
+}
+
+.hover-rise:hover {
+  transform: translateY(-5px);
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(248, 249, 250, 1), rgba(248, 249, 250, 0));
+}
+
+.yellow-gradient-overlay {
+  background: linear-gradient(to bottom, rgba(255, 221, 0, 0.7), rgba(255, 221, 0, 0) 100%);
+}
+
 /* Additions ni Mav para sa item (individual page) */
 .product-image {
   position: relative;
@@ -254,8 +275,8 @@ position: absolute;
   background-color: white;
   padding: 30px;
   margin-top: 0px;
-  width: 500px;
-  height: 600px;
+  max-width: 500px;
+  max-height: 600px;
 }
 
   .product-box p{

@@ -8,6 +8,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/project/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Signup</title>
   </head>
   <body class="login-body d-flex flex-column min-vh-100">
@@ -33,19 +37,19 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a
-              class="nav-link active text-white fs-5 text-uppercase p-4"
+              class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
               href="/project/"
               >Home</a
             >
           </li>
           <li class="nav-item" >
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
+            <a class="nav-link hover-rise text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
+            <a class="nav-link hover-rise text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
+            <a class="nav-link hover-rise text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
           </li>
         </ul>
 
@@ -271,6 +275,108 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- cart side thing -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartcanvas"
+      aria-labelledby="offcanvasRightLabel"
+      style="width: 100%; max-width: 700px"
+    >
+      <div class="offcanvas-header p-5">
+        <h5 id="offcanvasRightLabel">CART</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <hr class="m-0" />
+      <div class="offcanvas-body p-4 d-flex flex-column">
+        <!-- Cart items will be dynamically added here -->
+        <div class="flex-grow-1 overflow-auto" id="cart-items">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+
+            <div class="">
+              <div style="width: 110px">
+                <div class="input-group">
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    −
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm text-center"
+                    value="1"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout button pinned at bottom -->
+        <div class="mt-4">
+          <button
+            class="btn btn-primary rounded-pill px-5 w-100"
+            data-bs-dismiss="offcanvas"
+          >
+            CHECKOUT
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/project/shopData.js"></script>
+    <script src="/project/script.js"></script>
   </body>
 </html>
