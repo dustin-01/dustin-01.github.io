@@ -106,5 +106,23 @@ const shopItems = {
     description: "A Premium Battle Pass can be used to join a Raid Battle or earn premium rewards in the GO Battle League.",
     price: 88,
     image: "/project/assets/shop_thumbnails/passes/premiumBattlePass.png"
+  },
+  starterBox:{
+    name: "Starter Box",
+    description: "The Starter Box has everything you need to hit the ground running (or hatching)! Packed with essential items to help you catch, hatch, and explore, this bundle is perfect for new Trainers ready to level up fast.",
+    price: 88,
+    image: "/project/assets/shop_thumbnails/redboxPlain.png"
+  },
+  pumasaBox:{
+    name: "Sana Makapasa sa Finals Box",
+    description: "Sir, perfect niyo na po kami please, thank you so much Sir <3333",
+    price: 4,
+    image: "/project/assets/shop_thumbnails/blueBoxPlain.png"
+  },
+  anitBagsakBox:{
+    name: "mag-s-second year na regular please!",
+    description: "Papasa ka sa lahat ng subject!",
+    price: 4,
+    image: "/project/assets/shop_thumbnails/yellowBoxPlain.png"
   }
 };
