@@ -1,76 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/project/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
     />
-    <title>About Us</title>
-</head>
-<body class="login-body ">
-  <!-- header -->
-  <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/project/">
-        <img src="/project/assets/Logo-Outline.webp" alt="logo" />
-      </a>
+    <link rel="stylesheet" href="/project/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Pokémon Go!</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand hover-rise" href="/project/">
+          <img src="/project/assets/Logo-Outline.webp" alt="logo" />
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active text-white fs-5 text-uppercase p-4"
-              href="/project/"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
-          </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
-          </li>
-        </ul>
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/products/"
+                >Store</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                href="/project/faq/"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover-rise active text-warning fs-5 text-uppercase p-4 text-decoration-underline"
+                href="/project/about/"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link hover-rise text-white fs-5 text-uppercase p-4"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cartcanvas"
+                aria-controls="cartcanvas"
+                aria-expanded="false"
+              >
+                CART
+              </button>
+            </li>
+          </ul>
 
-        <div class="d-lg-none mt-3">
-          <a href="/project/login/"><button class="btn btn-danger rounded-pill w-100">Log In</button></a>
+          <div class="d-lg-none mt-3">
+            <a href="/project/login/"
+              ><button class="btn btn-danger rounded-pill w-100">
+                Log In
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
+          <button
+            class="btn btn-secondary rounded-circle me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartcanvas"
+            aria-controls="cartcanvas"
+          >
+            <i class="bi bi-cart"></i>
+          </button>
+          <a href="/project/login/"
+            ><button class="btn btn-danger rounded-pill px-5">Log In</button></a
+          >
         </div>
       </div>
-      <div class="d-none d-lg-block">
-        <a href="/project/login/"><button class="btn btn-danger rounded-pill px-5">Log In</button></a>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="container my-5">
-    <div class="row align-items-center">
-
-      <div class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Meowth.png/250px-Meowth.png" 
-          alt="Meowth Hero" 
-          class="img-fluid"
-          style="max-height: 300px;"
-        />
-      </div>
+    <section>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Meowth.png/250px-Meowth.png"
+              alt="Meowth Hero"
+              class="img-fluid"
+              style="max-height: 300px"
+            />
+          </div>
 
       <div class="col-12 col-md-6 text-center text-md-start">
         <h2 class="fw-bold" style="font-family: 'Hammersmith One';">
@@ -94,15 +140,15 @@
   <div class="container">
     <div class="row" style="font-family: 'Hammersmith One';">
       <div class="col-6 col-md-4 col-lg-3 mb-4">
-        <img src="/project/assets/Nikko.png" class="img-fluid" alt="Image 1">
+        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/185.png" class="img-fluid" alt="Image 1">
         <p class="mt-2">Dustin Robinson</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3 mb-4">
-        <img src="/project/assets/Kiel.jpg" class="img-fluid" alt="Image 2">
+        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/039.png" class="img-fluid" alt="Image 2">
         <p class="mt-2">Ezekiel Inciso</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3 mb-4">
-        <img src="/project/assets/mavv.png" class="img-fluid" alt="Image 3">
+        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/658.png" class="img-fluid" alt="Image 3">
         <p class="mt-2">Maverrick Watanabe</p>
       </div>
       <div class="col-6 col-md-4 col-lg-3 mb-4">
@@ -147,29 +193,136 @@
           </a>
         </div>
 
-        <div class="col-12 col-md-3">
-          <a href="#" class="link-light text-decoration-none">Terms of Service</a>
+          <div class="col-12 col-md-3">
+            <a href="#" class="link-light text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+          <div class="col-12 col-md-3">
+            <a href="#" class="link-light text-decoration-none"
+              >Privacy Policy</a
+            >
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" class="link-light text-decoration-none">Contact Us</a>
+          </div>
         </div>
-        <div class="col-12 col-md-3">
-          <a href="#" class="link-light text-decoration-none">Privacy Policy</a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="#" class="link-light text-decoration-none">Contact Us</a>
+
+        <hr class="my-4 border-light" />
+
+        <div class="text-center small">
+          <p class="mb-1">
+            © 2025 Pokémon Company International. All rights reserved.
+          </p>
+          <p class="mb-1">
+            Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.
+          </p>
         </div>
       </div>
+    </footer>
 
-      <hr class="my-4 border-light" />
+    <!-- cart side thing -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartcanvas"
+      aria-labelledby="offcanvasRightLabel"
+      style="width: 100%; max-width: 700px"
+    >
+      <div class="offcanvas-header p-5">
+        <h5 id="offcanvasRightLabel">CART</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <hr class="m-0" />
+      <div class="offcanvas-body p-4 d-flex flex-column">
+        <!-- Cart items will be dynamically added here -->
+        <div class="flex-grow-1 overflow-auto" id="cart-items">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
 
-      <div class="text-center small">
-        <p class="mb-1">© 2025 Pokémon Company International. All rights reserved.</p>
-        <p class="mb-1">Pokémon, Pikachu, and the Pokémon logo are trademarks of Nintendo.</p>
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+
+            <div class="">
+              <div style="width: 110px">
+                <div class="input-group">
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    −
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm text-center"
+                    value="1"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <!-- Image -->
+            <div class="cart-image">
+              <img
+                src="https://placehold.co/400"
+                alt="Product"
+                class="img-fluid rounded"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Product Name</div>
+              <div class="text-muted small">Qty: 1</div>
+              <div class="fw-bold mt-1">₱299.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout button pinned at bottom -->
+        <div class="mt-4">
+          <button
+            class="btn btn-primary rounded-pill px-5 w-100"
+            data-bs-dismiss="offcanvas"
+          >
+            CHECKOUT
+          </button>
+        </div>
       </div>
     </div>
-  </footer>
-
- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
     ></script>
-
-</body>
+    <script src="/project/shopData.js"></script>
+    <script src="/project/script.js"></script>
+  </body>
 </html>
