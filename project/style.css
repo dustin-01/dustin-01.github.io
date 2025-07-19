@@ -46,6 +46,14 @@ body {
   border-bottom-left-radius: 0.9rem;
 }
 
+.item-background {
+  background-image: url('assets/Item-Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .pokeball-background-tiles {
   background-color: #ffde00;
   background-size: cover;
@@ -53,9 +61,7 @@ body {
   background-repeat: no-repeat;
   height: 400px;
   position: relative;
-
 }
-
 
 .grass-background {
   background-image: url('assets/Grass-Background.png');
@@ -146,3 +152,254 @@ body {
       margin-top: 8px;
       font-size: 16px;
     }
+
+.product-image {
+  margin-top: 0%;
+  padding: 0%;
+}
+    .Incense {
+      position: relative;
+      top: 215px; 
+      left: 65px;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+    }
+
+    .Lucky-Egg {
+      position: relative;
+      top: 250px; 
+      left: 85px;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+    }
+
+    .Star-Piece {
+      position: relative;
+      top: 180px; 
+      left: 5px;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+    }
+
+    .Pokemon-Storage {
+      position: relative;
+      top: 180px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Item-Bag {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Max-Particle {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Max-Mushroom {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Egg-Incubator {
+      position: relative;
+      top: 200px; 
+      left: 0px;
+      transform: translate(-50%, -50%);
+      width: 230px;
+      height: 230px;
+    }
+
+    .Super-Incubator {
+      position: relative;
+      top: 200px; 
+      left: 0px;
+      transform: translate(-50%, -50%);
+      width: 230px;
+      height: 230px;
+    }
+    
+    .Max-Revive {
+      position: relative;
+      top: 220px; 
+      left: 45px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Rare-Candy {
+      position: relative;
+      top: 280px; 
+      left: 83px;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+    }
+
+    .Lure {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+    
+    .Glacial-Lure {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Mossy-Lure {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Magnetic-Lure {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Rainy-Lure {
+      position: relative;
+      top: 230px; 
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+    }
+
+    .Remote-Raid-Pass {
+      position: relative;
+      top: 210px; 
+      left: 15px;
+      transform: translate(-50%, -50%);
+    }
+
+    .Premium-Battle-Pass {
+      position: relative;
+      top: 210px; 
+      left: 15px;
+      transform: translate(-50%, -50%);
+    }
+
+    .Coins-110 {
+      position: relative;
+      top: 230px; 
+      left: 80px;
+      transform: translate(-50%, -50%);
+    }
+
+    .Coins-600 {
+      position: relative;
+      top: 230px; 
+      left: 80px;
+      transform: translate(-50%, -50%);
+    }
+
+    .Coins-1300 {
+      position: relative;
+      top: 230px; 
+      left: 80px;
+      transform: translate(-50%, -50%);
+    }
+
+    .Coins-2700 {
+      position: relative;
+      top: 230px; 
+      left: 80px;
+      transform: translate(-50%, -50%);
+    }
+
+    .Coins-5600 {
+      position: relative;
+      top: 230px; 
+      left: 80px;
+      transform: translate(-50%, -50%);
+    }
+
+     .Coins-15500 {
+      position: relative;
+      top: 230px; 
+      left: 80px;
+      transform: translate(-50%, -50%);
+    }
+
+
+    .product-details{
+      margin-top: 0%;
+    }
+
+    .product-box{
+      background-color: white;
+      padding: 30px;
+      margin-top: 0px;
+      width: 500px;
+      height: 600px;
+    }
+
+    .item-subtitle {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .item-price {
+      font-size: 1.75rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .item-description {
+      border-top: 1px solid #b7bbbb;
+      padding-top: 20px;
+      margin-top: 1rem;
+      font-size: small;
+      font-weight: 400;
+    }
+
+    .add-to-cart-btn {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232842;
+    color: white;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
