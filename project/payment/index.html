@@ -15,53 +15,76 @@
 
   <body class="login-body d-flex flex-column min-vh-100">
     <!-- header -->
-  <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/project/">
-        <img src="/project/assets/Logo-Outline.webp" alt="logo" />
-      </a>
+    <nav class="navbar navbar-expand-lg main-navbar px-lg-5 py-3 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/project/">
+          <img src="/project/assets/Logo-Outline.webp" alt="logo" />
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active text-white fs-5 text-uppercase p-4"
-              href="/project/"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
-          </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
-          </li>
-        </ul>
+              <a
+                class="nav-link active text-white fs-5 text-uppercase p-4"
+                href="/project/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/products/">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/faq/">FAQ</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link text-white fs-5 text-uppercase p-4" href="/project/about/">ABOUT US</a>
+            </li>
+          </ul>
 
-        <div class="d-lg-none mt-3">
-          <a href="/project/login/"><button class="btn btn-danger rounded-pill w-100">Log In</button></a>
+          <div class="d-lg-none mt-3">
+            <a href="/project/login/"><button class="btn btn-danger rounded-pill w-100">Log In</button></a>
+          </div>
         </div>
+        <div class="d-none d-lg-block">
+          <a href="/project/login/"><button class="btn btn-danger rounded-pill px-5">Log In</button></a>
       </div>
-      <div class="d-none d-lg-block">
-        <a href="/project/login/"><button class="btn btn-danger rounded-pill px-5">Log In</button></a>
-    </div>
-  </nav>
+    </nav>
 
-   <div class="row h-100">
+   <div class="row min-vh-100">
+    <!-- RIGHT COLUMN PART -->
+    <div class="right-column col-lg-6 p-4 d-flex flex-column">
+      <h4 class="items-heading">ITEMS</h4>
+
+      <div class="item-summary flex-grow-1 overflow-auto" id="cart-items">
+      </div>
+
+      <div class="totals-section mt-4 pt-3">
+      <div class="d-flex justify-content-between mb-2">
+          <p class="item-payment">Subtotal</p>
+          <p class="item-payment" id="cart-subtotal">₱00.00</p>
+      </div>
+      <div class="d-flex justify-content-between mb-2">
+          <p class="item-payment">Including 12% VAT</p>
+          <p class="item-payment" id="cart-vat">₱00.00</p>
+      </div>
+      <div class="d-flex justify-content-between mb-2">
+          <p class="item-payment">TOTAL</p>
+          <p class="item-payment" id="cart-total">₱00.00</p>
+      </div>
+      
+      </div>
+    </div>
     <div class="col-lg-6 left-column p-4 d-flex flex-column">
       <!-- User Info -->
       <div class="user-info-box card p-4 mb-4 shadow-sm">
@@ -114,65 +137,13 @@
       <!-- Continue Button -->
       <button class="btn btn-danger btn-lg w-100 py-3 rounded-pill fw-bold continue-payment-btn mt-auto">Continue Payment</button>
     </div>
-
-    <!-- RIGHT COLUMN PART -->
-    <div class="right-column col-lg-6 p-4 d-flex flex-column">
-      <h4 class="items-heading">ITEMS</h4>
-
-      <div class="item-summary flex-grow-1 overflow-auto">
-        <div class="item-row d-flex align-items-center p-3 mb-3">
-          <div class="item-image-container me-3">
-            <img src="/project/assets/premium-raid-pass.png" alt="Premium Raid Pass" class="item-thumb" />
-          </div>
-          <div class="item-details flex-grow-1">
-            <p class="item-name">Premium Raid Pass</p>
-            <p class="item-quantity">x3 Items</p>
-          </div>
-          <div class="item-price">₱00.00</div>
-        </div>
-
-        <div class="item-row d-flex align-items-center p-3 mb-3">
-          <div class="item-image-container me-3">
-            <img src="/project/assets/premium-raid-pass.png" alt="Premium Raid Pass" class="item-thumb" />
-          </div>
-          <div class="item-details flex-grow-1">
-            <p class="item-name">Premium Raid Pass</p>
-            <p class="item-quantity">x3 Items</p>
-          </div>
-          <div class="item-price">₱00.00</div>
-        </div>
-
-        <div class="item-row d-flex align-items-center p-3 mb-3">
-          <div class="item-image-container me-3">
-            <img src="/project/assets/premium-raid-pass.png" alt="Premium Raid Pass" class="item-thumb" />
-          </div>
-          <div class="item-details flex-grow-1">
-            <p class="item-name">Premium Raid Pass</p>
-            <p class="item-quantity">x3 Items</p>
-          </div>
-          <div class="item-price">₱00.00</div>
-        </div>
-      </div>
-
-        <div class="totals-section mt-4 pt-3">
-        <div class="d-flex justify-content-between mb-2">
-            <p class="item-payment">Subtotal</p>
-            <p class="item-payment">₱00.00</p>
-        </div>
-        <div class="d-flex justify-content-between mb-2">
-            <p class="item-payment">TOTAL</p>
-            <p class="item-payment ">₱00.00</p>
-        </div>
-        <div class="d-flex justify-content-between">
-            <p class="item-payment">Including 12% VAT</p>
-            <p class="item-payment">₱00.00</p>
-        </div>
-        </div>
   </div>
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="/project/shopData.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
